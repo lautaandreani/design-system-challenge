@@ -44,7 +44,7 @@ function Home() {
 
       <div className='flex gap-10 items-center'>
         {size.map((size) => (
-          <ButtonView properties={`size='${size}'`}>
+          <ButtonView properties={`size='${size}'`} key={size}>
             <Button size={size} color='primary'>
               Default
             </Button>
@@ -54,7 +54,7 @@ function Home() {
 
       <div className='flex gap-10 items-center'>
         {colors.map((color) => (
-          <ButtonView properties={`color='${color}'`}>
+          <ButtonView properties={`color='${color}'`} key={color}>
             <Button color={color}>Default</Button>
           </ButtonView>
         ))}
